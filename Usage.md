@@ -42,7 +42,44 @@ ezSave.svd table example:
 
 }
 
+## Configuration Variables
 
+##### ezSave.Data_Key
+GetDataStore(ezSave.Data_Key)
+Change Data_Key to something different to reset all of the datas.
+
+
+## Mods
+Yes, there are also mods in ezSave.
+
+![image](https://user-images.githubusercontent.com/82947366/125324325-7b41ea80-e348-11eb-8147-afabd55767b1.png)
+
+All of the mods are located in mods folder.
+There is a pre-installed mod in the Mods folder. It's called ezStats. Which is nearly best way to make saveable or not, fully configurable leaderstat system.
+
+
+Configuration for ezStats:
+
+```lua
+local conf = {}
+
+conf.leaderstats = {
+	
+	
+--[[ Args: ["STAT_NAME"] = {"Type",amount on first join, true or false (true if it is gonna save false for opposite.) } ]]
+	["Cash"] = {"IntValue", 0,true},
+	["Gems"] = {"IntValue", 5,false},
+	
+	
+}
+conf.save_key = "leaderstats"
+
+
+
+return conf
+```
+
+Yes! It's so easy to create a leaderstat by ezStat mod.
 
 
 
