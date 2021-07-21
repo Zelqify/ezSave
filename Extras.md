@@ -29,7 +29,7 @@ end)
 
 Alright now we need to code the loop and save.
 
-```
+```lua
 
 
 local ezSave = require(game.ServerScriptService.ezSave)
